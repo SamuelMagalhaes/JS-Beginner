@@ -1,3 +1,5 @@
+/* REGRAS GERAIS */
+
 *{
   margin: 0;
   padding: 0;
@@ -16,7 +18,11 @@
 body{
   background-color: var(--bg-color);
   display: flex;
+  color: var(--text-color);
+  font-family: 'Titillium Web', sans-serif;
 }
+
+/* REGRAS DO HEADER */
 
 header{
   background-color: var(--aside-color);
@@ -43,4 +49,74 @@ header{
 #social-logos li{
   width: 1.8rem;
   margin-top: 1.5rem;
+}
+
+/* REGRAS DO MAIN */
+
+main{
+  margin: 3rem 0 0 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-project{
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-title{
+  font-size: 2rem;
+}
+
+.header-project input{
+  background-color: var(--inputs-color);
+  border-radius: 4px 4px 4px 4px;
+  width: 16rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+/* GALERIA */
+
+#project-gallery{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#main-project{
+  border: 1px solid red;
+  border-radius: 10px;
+  flex: 1;
+}
+
+#projects-little{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+#projects-little .project{
+  font-weight: 600;
+}
+
+.project img{
+  width: 10rem;
+  height: 6rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+/* REGRAS DO ASIDE */
+
+#project-info{
+  background-color: var(--aside-color);
+  width: 27rem;
+  margin: 8rem 0 0 4rem;
+  border-radius: 10px 0 0 10px;
+  padding: 3rem;
 }
