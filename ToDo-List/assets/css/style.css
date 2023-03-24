@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #7C3AED;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+}
+
+section{
+  border: 1px solid green;
+  margin: 2rem 2rem 0 2rem;
+}
+
+section nav{
+  margin-top: 3.5rem;
+}
+
+section ul,
+section a{
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  color: #CAB3FF;
+}
