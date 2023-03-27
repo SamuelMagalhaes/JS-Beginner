@@ -107,6 +107,7 @@ main{
 
 #projects-little .project{
   font-weight: 600;
+  cursor: pointer;
 }
 
 .project img{

@@ -13,14 +13,14 @@
   <title>KanBan Board</title>
 </head>
 <body>
-  <section>
-    <a href="#">
+  <section id="side-menu">
+    <a href="#" id="link-logo+">
       <img src="./assets/img/logo.svg" alt="logotipo" id="logo">
     </a>
     <nav>
-      <ul id="menu">
-        <li class="manu-item">
-          <a href="">
+      <ul id="menu ">
+        <li class="menu-item">
+          <a href="" class="active">
             <img src="./assets/img/Boards-active.svg" alt="Boards">Boards
           </a>
         </li>
@@ -42,8 +42,41 @@
       </ul>
     </nav>
   </section>
-  <main>
-
+  <main id="kanban-board">
+    <div id="main-header">
+      <h1>Meu KanBan <img src="./assets/img/Edit.svg" alt=""> </h1>
+      <img src="./assets/img/Profile picture 1.png" alt="" class="avatar-profile">
+    </div>
+    <div id="search-area">
+      <button id="search-button"><img src="./assets/img/filter.png" alt=""> Filter</button>
+      <input type="search" name="search-input" id="search-input" placeholder="Busque por cards, assuntos ou responsáveis">
+    </div>
+    <div id="task-area">
+      <div id="ToDo">
+        <h3>Fazer</h3>
+        <div class="card">
+          <h4 class="card-title">Título do card</h4>
+          <p class="card-desc">Lorem ipsum dolor</p>
+          <div class="card-label">desafio</div>
+        </div>
+      </div>
+      <div id="Doing">
+        <h3>Fazendo</h3>
+        <div class="card">
+          <h4 class="card-title">Título do card</h4>
+          <p class="card-desc">Lorem ipsum dolor</p>
+          <div class="card-label">desafio</div>
+        </div>
+      </div>
+      <div id="Done">
+        <h3>Feito</h3>
+        <div class="card">
+          <h4 class="card-title">Título do card</h4>
+          <p class="card-desc">Lorem ipsum dolor</p>
+          <div class="card-label">desafio</div>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
