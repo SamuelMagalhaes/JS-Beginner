@@ -10,7 +10,7 @@
   --text-color: #BBBBC1;
   --bg-color: #100E1C;
   --aside-color: #1B1D2E;
-  --inputs-color: #181721;
+  --inputs-color: #1B1D2E;
   --button-color: #295ADF;
   --link-color: #565B79;
 }
@@ -51,7 +51,7 @@ header{
   margin-top: 1.5rem;
 }
 
-/* REGRAS DO MAIN */
+/* REGRAS DO MAIN - Cabeçalho e Galeria de projetos */
 
 main{
   margin: 3rem 0 0 4rem;
@@ -84,8 +84,6 @@ main{
   outline: 1px solid #BBBBC1;
 }
 
-/* GALERIA */
-
 #project-gallery{
   margin-top: 2rem;
   display: flex;
@@ -94,9 +92,11 @@ main{
 }
 
 #main-project{
-  border: 1px solid red;
+  border: 1px solid #366EEA;
   border-radius: 10px;
   flex: 1;
+  background-image: url(./ToDo-List/assets/img/template-layout.png);
+  background-size: cover;
 }
 
 #projects-little{
