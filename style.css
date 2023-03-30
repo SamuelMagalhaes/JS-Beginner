@@ -144,7 +144,6 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-color);
   font-weight: 600;
   font-size: .9rem;
   width: 10rem;
@@ -154,6 +153,11 @@ main{
 
 #project-info button:hover{
   background-color: #366EEA;
+}
+
+#project-info button a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .hidden{

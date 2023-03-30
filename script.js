@@ -11,7 +11,7 @@ let projectsDescription = document.querySelectorAll("#project-info div")
 let calculatorProject = document.querySelector("#calculator")
 let converterProject = document.querySelector("#converter")
 let guessNumberProject = document.querySelector("#guessnumber")
-let memoryProject = document.querySelector("#memorygame")
+let ticTacToeProject = document.querySelector("#tictactoe")
 let kanBanProject = document.querySelector("#kanban")
 
 /* EVENTS */
@@ -20,38 +20,53 @@ for(let targetProject of projects){
     projectTitle.innerText = targetProject.innerText
 
     if(projectTitle.innerText === "Calculator"){
+
+      mainProject.style.backgroundImage = "url('./Calculator/assets/img/template-layout.png')";
+
       calculatorProject.classList.remove("hidden")
       converterProject.classList.add("hidden")
       guessNumberProject.classList.add("hidden")
-      memoryProject.classList.add("hidden")
+      ticTacToeProject.classList.add("hidden")
       kanBanProject.classList.add("hidden")
 
     } else if(projectTitle.innerText === "Converter"){
+
+      mainProject.style.backgroundImage = "url('./Converter/assets/img/template-layout.png')";
+
       calculatorProject.classList.add("hidden")
       converterProject.classList.remove("hidden")
       guessNumberProject.classList.add("hidden")
-      memoryProject.classList.add("hidden")
+      ticTacToeProject.classList.add("hidden")
       kanBanProject.classList.add("hidden")
 
     } else if(projectTitle.innerText === "Guess the Number"){
+
+      mainProject.style.backgroundImage = "url('./Guess-the-number/assets/img/template-layout.png')";
+
       calculatorProject.classList.add("hidden")
       converterProject.classList.add("hidden")
       guessNumberProject.classList.remove("hidden")
-      memoryProject.classList.add("hidden")
+      ticTacToeProject.classList.add("hidden")
       kanBanProject.classList.add("hidden")
 
-    } else if(projectTitle.innerText === "Jogo da Memória"){
+    } else if(projectTitle.innerText === "Tic Tac Toe"){
+
+      mainProject.style.backgroundImage = "url('./Tic-tac-toe/assets/img/template-layout.png')";
+
       calculatorProject.classList.add("hidden")
       converterProject.classList.add("hidden")
       guessNumberProject.classList.add("hidden")
-      memoryProject.classList.remove("hidden")
+      ticTacToeProject.classList.remove("hidden")
       kanBanProject.classList.add("hidden")
-      
+
     } else if(projectTitle.innerText === "KanBan"){
+
+      mainProject.style.backgroundImage = "url('./ToDo-List/assets/img/template-layout.png')";
+
       calculatorProject.classList.add("hidden")
       converterProject.classList.add("hidden")
       guessNumberProject.classList.add("hidden")
-      memoryProject.classList.add("hidden")
+      ticTacToeProject.classList.add("hidden")
       kanBanProject.classList.remove("hidden")
     }
   })
