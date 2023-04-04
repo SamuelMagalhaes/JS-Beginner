@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +16,39 @@
     <h1>Tic Tac Toe</h1>
   </header>
   <main>
-    <div id="line1">
-      <div id="fl-fs">.</div>
-      <div id="fl-ss">.</div>
-      <div id="fl-ts">.</div>
+    <div id="line-1">
+      <div id="fl-fs" class="square"></div>
+      <div id="fl-ss" class="square"></div>
+      <div id="fl-ts" class="square"></div>
     </div>
-    <div id="line2">
-      <div id="sl-fs">.</div>
-      <div id="sl-ss">.</div>
-      <div id="sl-ts">.</div>
+    <div id="line-2">
+      <div id="sl-fs" class="square"></div>
+      <div id="sl-ss" class="square"></div>
+      <div id="sl-ts" class="square"></div>
     </div>
-    <div id="line3">
-      <div id="tl-fs">.</div>
-      <div id="tl-ss">.</div>
-      <div id="tl-ts">.</div>
+    <div id="line-3">
+      <div id="tl-fs" class="square"></div>
+      <div id="tl-ss" class="square"></div>
+      <div id="tl-ts" class="square"></div>
     </div>
   </main>
-  <section>
-    <label for="">
-      Jogador
+  <section id="player-area">
+    <p>Jogador: </p>
+    <img src="./assets/img/cross.svg" alt="">
+  </section>
+  <section id="score-area">
+    <label for="name" id="score-x">
+      <img src="./assets/img/cross.svg" alt="">
+      <input type="text" name="square" id="" disabled>
     </label>
-    <label id="current-player">
-
+    <label for="" id="score-o">
+      <img src="./assets/img/circle.svg" alt="">
+      <input type="text" name="" id="" disabled>
     </label>
   </section>
-  <section>
-    <label for="">
-      Vencedor
-    </label>
-    <label id="winner-player">
+  <button>Restart</button>
+  <footer>
 
-    </label>
-  </section>
-  <button id=""restart>Restart</button>
+  </footer>
 </body>
 </html>
