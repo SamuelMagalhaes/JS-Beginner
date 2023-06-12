@@ -3,30 +3,35 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/Guess-the-number/assets/css/style.css">
-    <title>Number guessing game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Adivinhe o número</title>
   </head>
 
   <body>
-    <h1>Number guessing game</h1>
+    <div class="container">
+      <div class="press-start-btn">
+        <h1>Press Start!</h1>
+      </div>
+      <div class="content">
+        <h1>Adivinhe o número</h1>
+    
+        <p>Selecionamos um número aleatório entre 1 e 100. Veja se é capaz de adivinhar que número é este em 10 chances ou menos. Nós lhe diremos se o número escolhido na sua tentativa foi alto ou baixo demais.</p>
 
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+        <div class="form">
+          <label for="guessField">Escreva um número: </label>
+          <input type="number" min="1" max="100" required id="guessField" class="guessField">
+          <input type="submit" value="Chutar!" class="guessSubmit">
+        </div>
 
-    <div class="form">
-      <label for="guessField">Enter a guess: </label>
-      <input type="number" min="1" max="100" required id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+      </div>
     </div>
-
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
-
-    <script>
-
-      // Your JavaScript goes here
-
-    </script>
   </body>
 </html>
